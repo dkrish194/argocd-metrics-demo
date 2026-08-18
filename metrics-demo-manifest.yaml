@@ -68,7 +68,7 @@ spec:
     component: metrics-demo
   ports:
     - port: 8080
-      targetPort: 8080
+      targetPort: 5000
       protocol: TCP
 
 
