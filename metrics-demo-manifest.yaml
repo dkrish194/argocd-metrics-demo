@@ -9,7 +9,7 @@ metadata:
     teir: backend
     component: metrics-demo
 spec:
-  replicas: 2
+  replicas: 3
   selector:
     matchLabels:
       project: metrics-demo
