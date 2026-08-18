@@ -51,25 +51,25 @@ spec:
           #       name: metrics-demo
 
 
----
-apiVersion: v1
-kind: Service
-metadata:
-  name: metrics-demo
-  namespace: metrics-demo
-  labels:
-    project: metrics-demo
-    teir: backend
-    component: metrics-demo
-spec:
-  selector:
-    project: metrics-demo
-    teir: backend
-    component: metrics-demo
-  ports:
-    - port: 8080
-      targetPort: 5000
-      protocol: TCP
+# ---
+# apiVersion: v1
+# kind: Service
+# metadata:
+#   name: metrics-demo
+#   namespace: metrics-demo
+#   labels:
+#     project: metrics-demo
+#     teir: backend
+#     component: metrics-demo
+# spec:
+#   selector:
+#     project: metrics-demo
+#     teir: backend
+#     component: metrics-demo
+#   ports:
+#     - port: 8080
+#       targetPort: 5000
+#       protocol: TCP
 
 
 
