@@ -9,7 +9,7 @@ spec:
     #repoURL: https://github.com/CloudWithVarJosh/cwvj-app1-config.git
     repoURL: https://github.com/dkrish194/argocd-metrics-demo.git
     targetRevision: HEAD
-    path: .
+    path: metrics-demo/workloads
   destination:
     server: https://kubernetes.default.svc
     namespace: metrics-demo
