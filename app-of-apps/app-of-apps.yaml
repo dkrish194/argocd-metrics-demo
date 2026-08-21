@@ -11,7 +11,7 @@ spec:
       path: app-of-apps
   destination:
     server: https://kubernetes.default.svc
-    namespace: metrics-demo
+    namespace: argocd
   syncPolicy:
     automated:
       prune: true
