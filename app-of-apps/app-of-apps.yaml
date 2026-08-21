@@ -2,7 +2,7 @@ apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
   name: product
-  namespace: metrics-demo
+  namespace: argocd
 spec:
   project: default
   sources:
