@@ -8,7 +8,7 @@ spec:
   sources:
     - repoURL: https://github.com/dkrish194/argocd-metrics-demo.git
       targetRevision: main
-      path: app-of-apps
+      path: metrics-demo/argo-app
   destination:
     server: https://kubernetes.default.svc
     namespace: argocd
