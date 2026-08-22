@@ -1,20 +1,20 @@
-# apiVersion: argoproj.io/v1alpha1
-# kind: Application
-# metadata:
-#   name: app-metrics-demo
-#   namespace: argocd
-# spec:
-#   project: default
-#   source:
-#     #repoURL: https://github.com/CloudWithVarJosh/cwvj-app1-config.git
-#     repoURL: https://github.com/dkrish194/argocd-metrics-demo.git
-#     targetRevision: HEAD
-#     path: metrics-demo/workloads
-#   destination:
-#     server: https://kubernetes.default.svc
-#     namespace: metrics-demo
-#   # syncPolicy:
-#   #   automated:
-#   #     prune: true
-#   #     selfHeal: true
-#   syncPolicy: {}
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: app-metrics-demo
+  namespace: argocd
+spec:
+  project: default
+  source:
+    #repoURL: https://github.com/CloudWithVarJosh/cwvj-app1-config.git
+    repoURL: https://github.com/dkrish194/argocd-metrics-demo.git
+    targetRevision: HEAD
+    path: metrics-demo/workloads
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: metrics-demo
+  # syncPolicy:
+  #   automated:
+  #     prune: true
+  #     selfHeal: true
+  syncPolicy: {}
